@@ -24,9 +24,9 @@ public class Encapsulation {
         Bank.findAccount("91234");
         Bank.findAccount("977654");
 
-        savingAccount1.getBalance();
+        System.out.println("Balance: " + savingAccount1.getBalance() + " to account: " + savingAccount1.getAccountNumber());
         savingAccount1.deposit(1000);
-        savingAccount1.getBalance();
+        System.out.println("Balance: " + savingAccount1.getBalance() + " to account: " + savingAccount1.getAccountNumber());
 
         transactionAccount1.deposit(-1000);
 
