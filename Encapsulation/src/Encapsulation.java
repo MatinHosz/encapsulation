@@ -6,13 +6,13 @@ public class Encapsulation {
     public static void main(String[] args) {
         BankCustomers Bank =  new BankCustomers();
         
-        SavingAccount savingAccount1 = new SavingAccount("John Doe", "91234", 1000);
-        SavingAccount savingAccount2 = new SavingAccount("Jane Wiliam", "95678", 2000);
-        SavingAccount savingAccount3 = new SavingAccount("Emma Smith", "91011", 3000);
+        SavingAccount savingAccount1 = new SavingAccount("91234", "John Doe", 1000);
+        SavingAccount savingAccount2 = new SavingAccount("95678", "Jane Wiliam", 2000);
+        SavingAccount savingAccount3 = new SavingAccount("91011", "Emma Smith", 3000);
 
-        TransactionAccount transactionAccount1 = new TransactionAccount("Matin", "789456", 1000);
-        TransactionAccount transactionAccount2 = new TransactionAccount("Peshawa", "987654", 2000);
-        TransactionAccount transactionAccount3 = new TransactionAccount("Arian", "456789", 3000);
+        TransactionAccount transactionAccount1 = new TransactionAccount("789456", "Matin", 1000);
+        TransactionAccount transactionAccount2 = new TransactionAccount("987654", "Peshawa", 2000);
+        TransactionAccount transactionAccount3 = new TransactionAccount("456789", "Arian", 3000);
 
         Bank.addAccount(savingAccount1);
         Bank.addAccount(savingAccount2);
