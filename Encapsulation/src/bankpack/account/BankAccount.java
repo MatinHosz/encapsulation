@@ -18,7 +18,7 @@ public abstract class BankAccount {
             System.out.println("Amount to deposit must be positive");
             return;
         }
-        amount += balance;
+        balance += amount;
         System.out.println("Deposited: " + amount + " to account: " + accountNumber);
     }
     public void withdraw(double amount) {
