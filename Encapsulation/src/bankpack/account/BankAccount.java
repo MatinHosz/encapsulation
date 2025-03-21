@@ -15,17 +15,20 @@ public abstract class BankAccount {
     
     public void deposit(double amount) {
         if (amount < 0) {
-            throw new IllegalArgumentException("Amount to deposit must be positive");
+            System.out.println("Amount to deposit must be positive");
+            return;
         }
         amount += balance;
         System.out.println("Deposited: " + amount + " to account: " + accountNumber);
     }
     public void withdraw(double amount) {
         if (amount < 0) {
-            throw new IllegalArgumentException("Amount to withdraw must be positive");
+            System.out.println("Amount to withdraw must be positive");
+            return;
         }
         if (amount > balance) {
-            throw new IllegalArgumentException("Insufficient balance");
+            System.out.println("Insufficient balance");
+            return;
         }
         balance -= amount;
         System.out.println("Withdrawn: " + amount + " from account: " + accountNumber);
