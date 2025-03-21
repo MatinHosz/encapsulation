@@ -15,19 +15,19 @@ public abstract class BankAccount {
     
     public void deposit(double amount) {
         if (amount < 0) {
-            System.out.println("Amount to deposit must be positive");
+            System.out.println("Amount to deposit must be positive\n");
             return;
         }
         balance += amount;
-        System.out.println("Deposited: " + amount + " to account: " + accountNumber);
+        System.out.println("Deposited: " + amount + " to account: " + accountNumber );
     }
     public void withdraw(double amount) {
         if (amount < 0) {
-            System.out.println("Amount to withdraw must be positive");
+            System.out.println("Amount to withdraw must be positive\n");
             return;
         }
         if (amount > balance) {
-            System.out.println("Insufficient balance");
+            System.out.println("Insufficient balance\n");
             return;
         }
         balance -= amount;

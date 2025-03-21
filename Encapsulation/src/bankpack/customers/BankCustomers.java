@@ -22,7 +22,7 @@ public class BankCustomers {
             if (account.getAccountNumber().equals(accountNumber))
                 return account;
         }
-        System.out.println("Account with account number " + accountNumber + " not found!");
+        System.out.println("Account with account number " + accountNumber + " not found!\n");
         return null;
     }
 }
